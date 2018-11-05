@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+     <mapper  namespace="com.offcn.dao.SpDao">
+     
+    
+     <insert id="save" parameterType="com.offcn.po.Sp">
+        insert into sp(name,lowprice,avgprice,hprice,guige,unit,createdate) values(#{name},#{lowprice},#{avgprice},#{hprice},#{guige},#{unit},#{createdate})
+     </insert>
+     
+     <insert id="saves" parameterType="java.util.List">
+         insert into sp(name,lowprice,avgprice,hprice,guige,unit,createdate)
+         values
+         <foreach collection="list" item="item" index="index" separator=",">
+           (#{item.name},#{item.lowprice},#{item.avgprice},#{item.hprice},#{item.guige},#{item.unit},#{item.createdate})
+         </foreach>
+     </insert>
+     
+     <select id="getSpByBeginToEnd"  resultType="com.offcn.po.Sp">
+        select * from sp where createdate &gt;=#{begindate} and createdate &lt;=#{enddate} order by createdate asc
+     
+     </select>
+     
+     </mapper>
