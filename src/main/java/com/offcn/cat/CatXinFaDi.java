@@ -120,4 +120,7 @@ public class CatXinFaDi {
 		System.out.println("test1");
 	}
 
+	public void www(){
+		System.out.println("wwwwwwwwwwwwwwwwwwwwwwwwww");
+	}
 }
