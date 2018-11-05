@@ -21,7 +21,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.offcn.po.Sp;
 import com.offcn.service.SpService;
-
+/***
+ * 新增代码注释
+ * @author Administrator
+ *
+ */
 public class CatXinFaDi {
 
 	public static void main(String[] args) {
