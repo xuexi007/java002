@@ -116,4 +116,7 @@ public class CatXinFaDi {
 		return list;
 	}
 
+	public void www(){
+		System.out.println("wwwwwwwwwwwwwwwwwwwwwwwwww");
+	}
 }
