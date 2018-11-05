@@ -115,5 +115,9 @@ public class CatXinFaDi {
 		}
 		return list;
 	}
+	
+	public void test1(){
+		System.out.println("test1");
+	}
 
 }
